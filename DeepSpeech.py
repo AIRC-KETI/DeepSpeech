@@ -144,6 +144,7 @@ tf.app.flags.DEFINE_float   ('estop_std_thresh',  0.5,        'standard deviatio
 # Decoder
 
 tf.app.flags.DEFINE_string  ('decoder_library_path', 'native_client/libctc_decoder_with_kenlm.so', 'path to the libctc_decoder_with_kenlm.so library containing the decoder implementation.')
+## alphabet ㅍㅏㅇㅣㄹ ㅅㅜㅈㅓㅇ ㅍㅣㄹㅇㅛ
 tf.app.flags.DEFINE_string  ('alphabet_config_path', 'data/alphabet.txt', 'path to the configuration file specifying the alphabet used by the network. See the comment in data/alphabet.txt for a description of the format.')
 tf.app.flags.DEFINE_string  ('lm_binary_path',       'data/lm/lm.binary', 'path to the language model binary file created with KenLM')
 tf.app.flags.DEFINE_string  ('lm_trie_path',         'data/lm/trie', 'path to the language model trie file created with native_client/generate_trie')
